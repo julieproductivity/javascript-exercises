@@ -43,7 +43,7 @@ This is what the final function should look like:
 const helloWorld = function() {
   return 'Hello, World!'
 }
-
+`npm test helloWorld.spec.js`
 module.exports = helloWorld
 ```
 
