@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <div id="container">
+        <div class="display"></div>
+        <div class="controls"></div>
+      </div>
+
+      <script>
+
+const container = document.querySelector('#container');
+// selects the #container div (don't worry about the syntax, we'll get there)
+
+console.dir(container.firstElementChild);                      
+// selects the first child of #container => .display
+
+const controls = document.querySelector('.controls');   
+// selects the .controls div
+
+console.dir(controls.previousElementSibling);                  
+// selects the prior sibling => .display
+      </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Methods</title>
+</head>
+<body>
+    <h1>
+        THE TITLE OF YOUR WEBPAGE
+      </h1>
+      <div id="container"></div>
+</body>
+<script>
+const container = document.querySelector('#container');
+
+
+    const content = document.createElement('div');
+    content.classList.add('content');
+    content.textContent = 'This is the glorious text-content!';
+    
+    container.appendChild(content);
+    
+    const paragraph = document.createElement('h3');
+    paragraph.classList.add('redtext');
+    paragraph.textContent = 'Hey I\'m red!';
+   
+    container.appendChild(paragraph);
+    
+    
+    // p
+
+    const paragraph = document.createElement('p');
+    paragraph.classList.toggle('redtext');
+    paragraph.textContent = 'Hey I\'m red!';
+    
+    
+    </script>
+</html>
